@@ -1,100 +1,72 @@
-<!-- 🌊 Animated Skill Showcase Header (No GIF / No Emoji) -->
-<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:1200px; display:block; margin:auto; font-family:'Segoe UI', Roboto, sans-serif;">
-  <defs>
-    <!-- Gradient for background and text -->
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00b4d8">
-        <animate attributeName="stop-color" values="#00b4d8;#0077b6;#00b4d8" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#90e0ef">
-        <animate attributeName="stop-color" values="#90e0ef;#48cae4;#90e0ef" dur="6s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
+<h1 align="center">
+  <img src="[URL_TO_YOUR_BANNER_IMAGE_OR_GIF]" alt="Your Custom Banner Text" width="100%"/>
+</h1>
 
-    <!-- Wave Path -->
-    <path id="wavePath" d="M0,200 C300,260 600,140 900,200 C1050,230 1200,180 1200,180 L1200,400 L0,400 Z" />
-
-    <!-- Floating text animation -->
-    <style>
-      .float {
-        animation: float 3s ease-in-out infinite;
-      }
-      @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
-      }
-      .skill {
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-      }
-    </style>
-  </defs>
-
-  <!-- Animated gradient background -->
-  <rect width="1200" height="400" fill="url(#grad)" opacity="0.15"/>
-
-  <!-- Animated wave -->
-  <use href="#wavePath" fill="url(#grad)">
-    <animateTransform attributeName="transform" type="translate" from="0 0" to="-120 0" dur="6s" repeatCount="indefinite" />
-  </use>
-
-  <!-- Central Name / Title -->
-  <text x="50%" y="90" text-anchor="middle" fill="#023e8a" font-size="38" font-weight="bold">
-    Nishwan — Software Developer
-  </text>
-  <text x="50%" y="125" text-anchor="middle" fill="#03045e" font-size="16">
-    Crafting clean backends & interactive frontends
-  </text>
-
-  <!-- Floating Skill Icons/Texts -->
-  <text x="200" y="230" fill="#03045e" class="skill float">Java</text>
-  <text x="340" y="210" fill="#03045e" class="skill float" style="animation-delay:0.2s;">Spring Boot</text>
-  <text x="500" y="240" fill="#03045e" class="skill float" style="animation-delay:0.4s;">React</text>
-  <text x="660" y="210" fill="#03045e" class="skill float" style="animation-delay:0.6s;">MySQL</text>
-  <text x="780" y="240" fill="#03045e" class="skill float" style="animation-delay:0.8s;">Three.js</text>
-  <text x="930" y="220" fill="#03045e" class="skill float" style="animation-delay:1s;">Node.js</text>
-
-  <!-- Bottom subtle wave -->
-  <use href="#wavePath" fill="url(#grad)" opacity="0.3">
-    <animateTransform attributeName="transform" type="translate" from="0 0" to="-60 0" dur="4s" repeatCount="indefinite" />
-  </use>
-</svg>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,%20I'm%20[Your%20Name]!%F0%9F%91%8B;I%20Build%20Beautiful%20&%20Efficient%20Apps;Passion%20for%20[Your%20Core%20Skill];Let's%20Connect!&center=true&size=24" alt="Typing Animation" />
+</p>
 
 ---
 
-## 👋 About Me
-Hi, I'm **Nishwan**, a Java Full Stack Developer passionate about clean backend architecture and dynamic frontends.
+## 👋 **About Me**
 
-- 💻 Working on **EduAdmin ERP** — Admin, Staff, Student dashboards  
-- ⚙️ Tech Stack: Java, Spring Boot, React, MySQL, Servlets, JSP  
-- 🎯 Focus: Building scalable, interactive systems  
-- 🌐 Portfolio: [your-portfolio-link]
+I'm a **[Your Role/Title, e.g., Full-Stack Developer, Data Scientist]** with a passion for **[Your Core Area, e.g., clean code, scalable architecture, machine learning]**. I thrive on turning complex problems into elegant, real-world solutions.
 
----
-
-## 🚀 Current Projects
-- **EduAdmin ERP** — Academic & financial management system  
-- **RNX Digital** — Business web app (React + Node)  
-- **3D Portfolio** — React + Three.js interactive profile showcase  
+* 💻 I’m currently working on **[A cool project name/idea]**.
+* 🌱 I’m always learning **[A new technology or framework]**.
+* 👯 I’m looking to collaborate on **[Open-source projects or projects related to X]**.
+* 💬 Ask me about **[Your expertise, e.g., React, Python, cloud deployment]**.
+* 📫 How to reach me: **[Your Email]**
+* ⚡ Fun fact: **[A personal, non-work-related fact about you, e.g., I love hiking, I can solve a Rubik's cube in under a minute]**.
 
 ---
 
-## 🧩 Skills
-| Backend | Frontend | Tools | Database |
-|----------|-----------|--------|-----------|
-| Java | React | Git, Docker | MySQL |
-| Spring Boot | TypeScript | Postman | Hibernate |
-| Servlets & JSP | HTML, CSS, JS | Maven | — |
+## 🛠️ **Skills & Tools**
+
+Showcase your skills using **SVG Badges** (like Shields.io or Simple Icons) for a crisp, visual effect.
+
+### **Languages**
+<p>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+</p>
+
+### **Frameworks & Libraries**
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+</p>
+
+### **Databases & DevOps**
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
+</p>
 
 ---
 
-## 📫 Let's Connect
-[LinkedIn](#) • [GitHub](#) • [Portfolio](#)
+## 📈 **My GitHub Activity (Dynamic Visuals)**
+
+These services use SVGs to dynamically fetch and display your real-time stats, which is a great visual effect.
+
+| GitHub Stats | Top Languages | Contribution Streak |
+|---|---|---|
+| <img src="https://github-readme-stats.vercel.app/api?username=[YOUR_GITHUB_USERNAME]&show_icons=true&theme=radical&hide_border=true" alt="Your GitHub Stats"/> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[YOUR_GITHUB_USERNAME]&layout=compact&theme=radical&hide_border=true" alt="Your Top Languages"/> | <img src="https://github-readme-streak-stats.herokuapp.com/?user=[YOUR_GITHUB_USERNAME]&theme=dark&hide_border=true" alt="Your Contribution Streak"/> |
+
+<p align="center">
+  <img src="[URL_TO_A_COOL_CODING_GIF]" alt="Coding GIF" width="200" height="200"/>
+</p>
 
 ---
 
-<footer>
-<sub>✨ This README is fully animated using only SVG and CSS — lightweight, no GIFs required.</sub>
-</footer>
+## 🔗 **Connect With Me**
+
+<p align="center">
+  <a href="[YOUR_LINKEDIN_URL]" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="[YOUR_TWITTER_URL]" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/></a>
+  <a href="[YOUR_PORTFOLIO_URL]" target="_blank"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=wordpress&logoColor=white" alt="Portfolio"/></a>
+  </p>
 
