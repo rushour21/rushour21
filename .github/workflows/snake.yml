@@ -1,21 +1,5 @@
-# .github/workflows/snake.yml - Corrected and Final Version
-# .github/workflows/snake.yml - ADD THIS PERMISSIONS BLOCK
+# .github/workflows/snake.yml - FINAL VERSION
 
-name: Generate Contribution Snake
-
-on:
-# ... (existing on: block)
-  schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
-
-# ⚠️ ADD THIS NEW BLOCK HERE ⚠️
-permissions:
-  contents: write # This grants the token permission to push to the 'output' branch
-
-jobs:
-  build:
-# ... (rest of the file remains the same)
 name: Generate Contribution Snake
 
 on:
@@ -23,6 +7,9 @@ on:
     # Runs every 12 hours
     - cron: "0 */12 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write # Grants necessary permissions for the gh-pages action
 
 jobs:
   build:
@@ -33,7 +20,6 @@ jobs:
         id: snake-svg
         with:
           github_user_name: rushour21
-          # ⚠️ FIX 1: Changed 'outputs' to 'svg_out_path'
           svg_out_path: dist/github-snake.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -41,7 +27,6 @@ jobs:
       - uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
-          # ⚠️ FIX 2: Ensure build_dir points to the folder containing the SVG
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
