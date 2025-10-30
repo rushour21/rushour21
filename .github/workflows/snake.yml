@@ -1,5 +1,21 @@
 # .github/workflows/snake.yml - Corrected and Final Version
+# .github/workflows/snake.yml - ADD THIS PERMISSIONS BLOCK
 
+name: Generate Contribution Snake
+
+on:
+# ... (existing on: block)
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+# ⚠️ ADD THIS NEW BLOCK HERE ⚠️
+permissions:
+  contents: write # This grants the token permission to push to the 'output' branch
+
+jobs:
+  build:
+# ... (rest of the file remains the same)
 name: Generate Contribution Snake
 
 on:
