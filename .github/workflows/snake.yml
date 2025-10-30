@@ -1,15 +1,8 @@
-# .github/workflows/snake.yml - THE CORRECT YAML STRUCTURE
+# .github/workflows/snake.yml - GIF OUTPUT VERSION
 
 name: Generate Contribution Snake
 
-on:
-  schedule:
-    # Runs every 12 hours
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write # Grants necessary permissions for the gh-pages action
+# ... (on: and permissions: blocks remain the same)
 
 jobs:
   build:
@@ -17,10 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: Platane/snk@master
-        id: snake-svg
+        id: snake-gif # Renamed for clarity
         with:
           github_user_name: rushour21
-          svg_out_path: dist/github-snake.svg
+          # ⚠️ CRUCIAL CHANGE: Use gif_out_path to generate a moving GIF
+          gif_out_path: dist/github-snake.gif 
+          # You can optionally set a custom speed/frame rate here if you want
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
