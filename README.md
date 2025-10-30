@@ -54,7 +54,7 @@ These services use SVGs to dynamically fetch and display your real-time stats, w
 
 | GitHub Stats | Top Languages | Contribution Streak |
 |---|---|---|
-| <img src="https://github-readme-stats.vercel.app/api?username=[YOUR_GITHUB_USERNAME]&show_icons=true&theme=radical&hide_border=true" alt="Your GitHub Stats"/> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[YOUR_GITHUB_USERNAME]&layout=compact&theme=radical&hide_border=true" alt="Your Top Languages"/> | <img src="https://github-readme-streak-stats.herokuapp.com/?user=[YOUR_GITHUB_USERNAME]&theme=dark&hide_border=true" alt="Your Contribution Streak"/> |
+| <img src="https://github-readme-stats.vercel.app/api?username=rushour21&show_icons=true&theme=radical&hide_border=true" alt="Your GitHub Stats"/> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[YOUR_GITHUB_USERNAME]&layout=compact&theme=radical&hide_border=true" alt="Your Top Languages"/> | <img src="https://github-readme-streak-stats.herokuapp.com/?user=[YOUR_GITHUB_USERNAME]&theme=dark&hide_border=true" alt="Your Contribution Streak"/> |
 
 <p align="center">
   <img src="[URL_TO_A_COOL_CODING_GIF]" alt="Coding GIF" width="200" height="200"/>
