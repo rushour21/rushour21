@@ -54,10 +54,7 @@ These services use SVGs to dynamically fetch and display your real-time stats, w
 
 | GitHub Stats | Top Languages | Contribution Streak |
 |---|---|---|
-| <img src="https://github-readme-stats.vercel.app/api?username=rushour21&show_icons=true&theme=radical&hide_border=true" alt="Your GitHub Stats"/> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rushour21&layout=compact&theme=radical&hide_border=true" alt="Your Top Languages"/> | <img src="https://github-readme-streak-stats.herokuapp.com/?user=rushour21&theme=dark&hide_border=true" alt="Your Contribution Streak"/> |
-
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=rushour21&theme=dark&hide_border=true" alt="Your Contribution Streak"/> 
+| <img src="https://github-readme-stats.vercel.app/api?username=[YOUR_GITHUB_USERNAME]&show_icons=true&theme=radical&hide_border=true" alt="Your GitHub Stats"/> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[YOUR_GITHUB_USERNAME]&layout=compact&theme=radical&hide_border=true" alt="Your Top Languages"/> | <img src="https://github-readme-streak-stats.herokuapp.com/?user=[YOUR_GITHUB_USERNAME]&theme=dark&hide_border=true" alt="Your Contribution Streak"/> |
 
 <p align="center">
   <img src="[URL_TO_A_COOL_CODING_GIF]" alt="Coding GIF" width="200" height="200"/>
@@ -72,4 +69,3 @@ These services use SVGs to dynamically fetch and display your real-time stats, w
   <a href="[YOUR_TWITTER_URL]" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/></a>
   <a href="[YOUR_PORTFOLIO_URL]" target="_blank"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=wordpress&logoColor=white" alt="Portfolio"/></a>
   </p>
-
