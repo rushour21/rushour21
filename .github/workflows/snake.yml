@@ -1,4 +1,4 @@
-# .github/workflows/snake.yml - Corrected Version
+# .github/workflows/snake.yml - Corrected and Final Version
 
 name: Generate Contribution Snake
 
@@ -13,19 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      # ⚠️ This is the crucial change: using the root action
-      - uses: Platane/snk@master 
-        id: snake-gif
+      - uses: Platane/snk@master
+        id: snake-svg
         with:
           github_user_name: rushour21
-          # The output file where the SVG/GIF will be created
-          outputs: dist/github-snake.svg
+          # ⚠️ FIX 1: Changed 'outputs' to 'svg_out_path'
+          svg_out_path: dist/github-snake.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
+          # ⚠️ FIX 2: Ensure build_dir points to the folder containing the SVG
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
