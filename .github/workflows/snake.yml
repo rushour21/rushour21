@@ -1,8 +1,16 @@
-# .github/workflows/snake.yml - GIF OUTPUT VERSION
+# .github/workflows/snake.yml - FINAL, COMPLETE, AND CORRECT VERSION
 
 name: Generate Contribution Snake
 
-# ... (on: and permissions: blocks remain the same)
+on:
+  # ⚠️ These two events tell the action WHEN to run:
+  schedule:
+    # Runs every 12 hours
+    - cron: "0 */12 * * *"
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -10,12 +18,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: Platane/snk@master
-        id: snake-gif # Renamed for clarity
+        id: snake-gif
         with:
           github_user_name: rushour21
-          # ⚠️ CRUCIAL CHANGE: Use gif_out_path to generate a moving GIF
+          # Set output to GIF for guaranteed animation
           gif_out_path: dist/github-snake.gif 
-          # You can optionally set a custom speed/frame rate here if you want
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
