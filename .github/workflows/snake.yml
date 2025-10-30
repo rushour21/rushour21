@@ -1,6 +1,6 @@
-# .github/workflows/snake.yml
+# .github/workflows/snake.yml - Corrected Version
 
-name: Generate Snake Animation
+name: Generate Contribution Snake
 
 on:
   schedule:
@@ -13,18 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: Platane/snk/svg@master # <--- The key fix is here
+      # ⚠️ This is the crucial change: using the root action
+      - uses: Platane/snk@master 
+        id: snake-gif
         with:
           github_user_name: rushour21
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          # The output file where the SVG/GIF will be created
+          outputs: dist/github-snake.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
